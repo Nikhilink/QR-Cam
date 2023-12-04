@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_centerHorizontal="true"
+       android:text="Barcode Scanner For Library Management System"
+       android:textSize="40dp"
+       android:textColor="@color/MiTharvel"
+       android:gravity="center"
+       />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:text="Scan Barcode For Student"
+        android:id="@+id/scanforstudent"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/scanforstudent"
+        android:text="scan barcode for Book"
+        android:padding="10dp"
+       android:id="@+id/scanforbook"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/scanforbook"
+        android:layout_centerHorizontal="true"
+        android:text="Scan other Barcodes"
+     android:id="@+id/scanothercodes"   />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/scanothercodes"
+        android:id="@+id/configure"
+        android:text="Configure"
+        />
+
+</RelativeLayout>
